@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+    <link rel="stylesheet" href="css/jquery.animateSlider.css">
+    <link rel="stylesheet" href="css/demo2.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="player/skin/skin.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="player/flowplayer.min.js"></script>
+</head>
+
+<body>
+    <section id="logo-section">
+        <img src="images/logo.png">
+    </section>
+    <nav role='navigation'>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="portfolio.html">Портфоліо</a></li>
+            <li><a href="cooperation.html">Співпраця</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+    <section id='slider-section'>
+        <ul class="anim-slider">
+            <!-- Slide No1 -->
+            <li class="anim-slide">
+            </li>
+            <!-- Slide No2 -->
+            <li class="anim-slide">
+            </li>
+            <!-- Slide No3 -->
+            <li class="anim-slide">
+            </li>
+        </ul>
+    </section>
+    <section id="content-section">
+        <div class="home-text">
+            <p class="main-text-first-row">WEDDING CINEMATOGRAPHY</p>
+            <p class="main-text-second-row">Весільне і сімейне відео</p>
+            <br>
+            <br>
+            <div class="telephone">
+                <div class="hr-container-left">
+                    <hr>
+                </div>
+                <p class="main-text-third-row">+38 067 344 53 72</p>
+                <div class="hr-container-right">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="feed flowplayer">
+            <video poster="images/demo2/4.jpg">
+                <source type="video/webm" src="video/wd.mp4">
+            </video>
+        </div>
+        <div class="feed flowplayer">
+            <video poster="images/demo2/5.jpg">
+                <source type="video/webm" src="video/wd2.mp4">
+            </video>
+        </div>
+        <div class="feed flowplayer">
+            <video poster="images/demo2/6.jpg">
+                <source type="video/webm" src="video/wd3.mp4">
+            </video>
+        </div>
+    </section>
+    <section id='footer-section'>
+        <div class="social_logo">
+            <a href="https://www.facebook.com/vladimir.mussur"><i class="icon-facebook icon-3x"></i></a>
+            <a href="https://www.youtube.com/user/volodyavektor"><i class="icon-youtube-play icon-3x"></i></a>
+            <a href="https://www.instagram.com/volodimirmussur"><i class="icon-camera-retro icon-3x"></i></a>
+            <a href="https://www.facebook.com/vladimir.mussur"><i class="icon-twitter icon-3x"></i></a>
+            <a href="https://vk.com/vm2016"><i class="icon-vk icon-3x"></i></a>
+            <a href="https://vimeo.com/vladimir2011"><i class="fa fa fa-vimeo fa-3x"></i></a>
+        </div>
+        <div class="social_logo">
+            <span class="some-text"> VM STUDIO ПОВНИЙ КОМПЛЕКС ВІДЕО ПОСЛУГ</span>
+            <br>
+            <span>© 2017  VM STUDIO.  Всі права захищені. </span>
+            <br>
+            <br>
+        </div>
+    </section>
+    <script src="js/jquery.appear.js"></script>
+    <script>
+    $(function() {
+        $(document.body).on('appear', '.feed', function(e, $affected) {
+            $(this).addClass("appeared");
+        });
+        $('.feed').appear({ force_process: true });
+    });
+    </script>
+    <!-- Bower Depedencies -->
+    <script src="js/modernizr.js"></script>
+    <!-- Load the plugin -->
+    <script src="js/jquery.animateSlider.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
