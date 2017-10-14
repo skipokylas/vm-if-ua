@@ -484,7 +484,7 @@
   background-size: contain;
   zoom: 1 !important;
   width: 100%;
-  display: inline-block; }
+  /*display: inline-block; */}
   .flowplayer .fp-hidden {
     display: none; }
   .flowplayer .fp-shown {

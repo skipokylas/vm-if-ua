@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="css/jquery.animateSlider.css">
     <link rel="stylesheet" href="css/demo2.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="player/skin/skin.css">
     <script src="js/jquery.min.js"></script>
     <script src="player/flowplayer.min.js"></script>
@@ -17,7 +19,17 @@
 
 <body>
     <section id="logo-section">
-        <img src="images/logo.png">
+        <img class="logo-f" src="images/logo.png">
+        <img class="logo-m" src="images/logo-min.png">
+        <div class="menu-burger">
+            <svg enable-background="new 0 0 34 24" height="24px" id="Layer_1" version="1.1" viewBox="0 0 34 24" width="49px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g>
+                    <rect fill="#324651" height="6" width="49" />
+                    <rect fill="#324651" height="6" width="49" y="9" />
+                    <rect fill="#324651" height="6" width="49" y="18" />
+                </g>
+            </svg>
+        </div>
     </section>
     <nav role='navigation'>
         <ul>
@@ -27,17 +39,22 @@
             <li><a href="contacts.html">Контакти</a></li>
         </ul>
     </nav>
-    <section id="content-portfolio-section">
+    <section id="content-contacts-section">
         <div class="home-text">
             <p class="main-text-first-row">WEDDING CINEMATOGRAPHY</p>
             <p class="main-text-second-row">Весільне і сімейне відео</p>
+            <br>
+            <p class="type-cooperation">VM studio надає повний комплекс відео послуг в Івано-Франківьку і по цілій країні.</p>
+            <p class="type-cooperation">Наше основне завдання полягає в тому, щоб зробити ваші спогади красивими і приємними для вас.</p>
+            <p class="type-cooperation">Створення красивих і неповторних відеороликів - це не просто наша робота, а наше життя. </p>
             <br>
             <br>
             <div class="telephone">
                 <div class="hr-container-left">
                     <hr>
                 </div>
-                <p class="main-text-third-row">+38 067 344 53 72</p>
+                <p class="main-text-third-row">+38 067 344 53 72<br><br>+38 066 527 67 76</p>
+
                 <div class="hr-container-right">
                     <hr>
                 </div>
@@ -48,7 +65,7 @@
         <div class="center-flex">
             
             <div class="right">
-               <div class="feed flowplayer center">
+               <div class="  center">
                     <img src="images/i.jpg" alt="" class="round">
                     <p class="name-cooperation">Муссур Володимир</p>
                     <p class="type-cooperation"></p>
@@ -85,6 +102,7 @@
         $('.feed').appear({ force_process: true });
     });
     </script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
